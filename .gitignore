@@ -4,5 +4,6 @@ __pycache__/
 *$py.class
 .DS_Store
 
-# VS Code Workspace
+# VS Code
 .idea
+.tempCodeRunnerFile.python

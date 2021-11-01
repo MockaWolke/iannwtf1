@@ -4,4 +4,4 @@
 
 ## Weeks
 
-1.  [Backpropagation from Scratch](~\backprop_from_scratch)
+1.  [Backpropagation from Scratch](backprop_from_scratch)
