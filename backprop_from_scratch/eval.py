@@ -4,17 +4,14 @@ def sigmoid(drive):                                                 # sigmoid ac
     return 1 / (1 + np.exp(-drive))
 
 def sigmoidprime(drive):                                            # derivative of the sigmoid activation func
-    sig = sigmoid(drive)
-    return sig * (1 - sig)
+    exp = np.exp(drive)
+    return exp / (exp + 1)**2
 
 def squared_error(t, y):                                            # loss func (qualitative performance measure)
-    return (t-y)**2
+    return (t - y)**2
 
-def accuracy(t, y, theshold = 0.5):                                 # quantitative performance measure
-    labels = np.where(t == True, y - theshold, y + theshold)
-    true_labels = labels[0 < labels < 1]
-    return true_labels/labels
-
+def accuracy(t, y, threshold = 0.5):                                 # quantitative performance measure
+    return np.mean(np.abs(t - y) <= threshold)
 
 
 if __name__ == "__main__":

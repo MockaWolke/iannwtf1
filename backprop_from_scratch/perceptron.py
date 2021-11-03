@@ -33,7 +33,8 @@ class Perceptron():
 
             inputs = activations from earlier layer neurons
         """
-
+        print(inputs)
+        print(self.weights)
         self.drive = np.dot(inputs, self.weights) + self.bias
         return self.activation(self.drive)
 
@@ -48,8 +49,7 @@ class Perceptron():
         """
 
         # gradient calc
-        weight_gradient = np.array([delta * self.activation(self.weights)])
-        bias_gradient = np.array([delta * self.activation(self.bias)]) # ?? Not sure if that is needed
-        # update
-        self.weights = self.weights - (self.alpha * weight_gradient)
-        self.bias = self.bias - (self.alpha * bias_gradient)
+        gradient = delta * self.weights
+        # param update
+        self.weights -=  self.alpha * gradient
+        self.bias -= self.alpha * delta
