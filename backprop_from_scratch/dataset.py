@@ -1,15 +1,24 @@
 import numpy as np
 
+inputs = np.array([(1,0),(1,1),(0,0),(0,1)], dtype=np.bool_) # all reasonable logic gate inputs
+
+and_lables = np.array([i[0] & i[1] for i in inputs])
+or_lables = np.array([i[0] | i[1] for i in inputs])
 
 
-INPUTS = np.array([(1,0),(1,1),(0,0),(0,1)], dtype=np.bool_)   # all reasonable inputs for our logic gates
+def random_data(kind):
+    
+    if kind == "and":
+        return inputs, and_lables
 
+    if kind == "or":
+        return inputs, or_lables
 
+    if kind == "nand":
+        return inputs, ~ and_lables
 
-and_lables = np.array([i[0] & i[1] for i in INPUTS])           # labels for inputs evaluated with AND gate
-or_lables = np.array([i[0] | i[1] for i in INPUTS])
+    if kind == "nor":
+        return inputs, ~ or_lables
 
-nand_lables = ~ and_lables                                     # NOT AND/OR labels are nothing more
-nor_lables = ~ or_lables                                       # than the complement of AND/OR labels
-
-xor_lables = nand_lables & or_lables                           # XOR labels are the conjunct of NOT AND and OR
+    if kind == "xor":
+        return inputs, ~ and_lables & or_lables
