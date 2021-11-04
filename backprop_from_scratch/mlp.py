@@ -91,7 +91,7 @@ class MLP(Perceptron):
   
         
         for neuron in self.output_layer:
-            delta  = (2/self.output_width) *(t - neuron.output) * neuron.activation_func_der(neuron.drive)            
+            delta  = (2/self.output_width) *(neuron.output- t) * neuron.activation_func_der(neuron.drive)            
             neuron._update(delta)      
     
         
