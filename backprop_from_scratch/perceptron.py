@@ -33,8 +33,6 @@ class Perceptron():
 
             inputs = activations from earlier layer neurons
         """
-        print(inputs)
-        print(self.weights)
         self.drive = np.dot(inputs, self.weights) + self.bias
         return self.activation(self.drive)
 

@@ -12,4 +12,4 @@ def train(MLP = MLP(), kind = "xor"):
     
     return True
 
-print(train())
+print(train(MLP = MLP(depth = 5)))
