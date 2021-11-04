@@ -1,15 +1,37 @@
 import numpy as np
-from mlp import MLP
-from dataset import random_data
-from eval import squared_error, accuracy
+from eval import  accuracy, squared_error
 
-def train(MLP = MLP(), kind = "xor"):
+def epoch(mlp, data):
     
-    inputs, t = random_data(kind)
+    input_values, targets = data
 
-    MLP.forward_step(inputs[0])
-    MLP.backprob_step(t[0])
+    accuracy_of_loss = 0
     
-    return True
+    for i, input_value in enumerate(input_values):
+        
+        output = mlp.forward_step(input_value)
+        
+        accuracy_of_loss+= accuracy(output,targets[i])
+        mlp.backprob_step(targets[i])
+        
+    return accuracy_of_loss / len(input_values)
+    
+def live_epoch(mlp,data):
+    
+    input_values, targets = data
 
-print(train(MLP = MLP(depth = 5)))
+    accuracy_of_loss = 0
+    
+    sq_error = 0
+    
+    for i, input_value in enumerate(input_values):
+        
+        output = mlp.forward_step(input_value)
+        
+        accuracy_of_loss+= accuracy(output,targets[i])
+        sq_error += suared_error(output,targets[i])
+        mlp.backprob_step(targets[i])
+        
+    return accuracy_of_loss / len(input_values) , sq_error /len(input_values)
+
+

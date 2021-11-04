@@ -1,5 +1,5 @@
 import numpy as np
-from eval import sigmoid
+from eval import sigmoid, sigmoidprime
 
 class Perceptron():
     """ Initializes a Perceptron.
@@ -10,7 +10,7 @@ class Perceptron():
     """
 
 
-    def __init__(self, input_units, learning_rate = 1, activ_func = sigmoid):
+    def __init__(self, input_units, learning_rate = 1, activ_func = sigmoid, activ_func_derivate= sigmoidprime):
         """ ## Parameters:
         
             -   input_units = input layer width
@@ -23,7 +23,10 @@ class Perceptron():
         self.drive = np.nan
         self.alpha = learning_rate
         self.activation = activ_func
-    
+        self.activation_func_der = activ_func_derivate
+        self.output = np.nan
+        self.delta = np.nan
+        
 
 
     def _forward_step(self, inputs):
@@ -35,7 +38,8 @@ class Perceptron():
         """
         self.incoming_activations = inputs
         self.drive = np.dot(inputs, self.weights) + self.bias
-        return self.activation(self.drive)
+        self.output = float(self.activation(self.drive))
+        return self.output
 
 
 
@@ -46,9 +50,9 @@ class Perceptron():
 
             delta = error signal
         """
-
+        self.delta = delta
         # gradient calc
-        gradient = delta * self.incoming_activations
+        gradient = self.delta * self.incoming_activations
         # param update
         self.weights -=  self.alpha * gradient
         self.bias -= self.alpha * delta

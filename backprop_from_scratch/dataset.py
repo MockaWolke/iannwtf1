@@ -6,7 +6,7 @@ and_lables = np.array([i[0] & i[1] for i in inputs])
 or_lables = np.array([i[0] | i[1] for i in inputs])
 
 
-def random_data(kind):
+def random_data(kind='xor'):
     
     if kind == "and":
         return inputs, and_lables

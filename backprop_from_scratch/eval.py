@@ -11,7 +11,7 @@ def squared_error(t, y):                                            # loss func 
     return (t - y)**2
 
 def accuracy(t, y, threshold = 0.5):                                 # quantitative performance measure
-    return np.mean(np.abs(t - y) <= threshold)
+    return np.abs(t - y) <= threshold
 
 
 if __name__ == "__main__":
