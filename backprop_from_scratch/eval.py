@@ -1,16 +1,30 @@
+""" 
+Eval skript
+
+Skript provides needed functions for our MLP
+"""
+
 import numpy as np
 
-def sigmoid(drive):                                                 # sigmoid activation func
+
+def sigmoid(drive):
+    """Sigmoid activation function. """
     return 1 / (1 + np.exp(-drive))
 
-def sigmoidprime(drive):                                            # derivative of the sigmoid activation func
+
+def sigmoidprime(drive):  
+    """ Derivative of the sigmoid activation function. """
     exp = np.exp(drive)
     return exp / (exp + 1)**2
 
-def squared_error(t, y):                                            # loss func (qualitative performance measure)
+
+def squared_error(t, y):
+    """ Loss function (qualitative performance measure). """
     return (t - y)**2
 
-def accuracy(t, y, threshold = 0.5):                                 # quantitative performance measure
+
+def accuracy(t, y, threshold = 0.5):                        
+    """ Accuracy (Quantitative performance measure). """
     return np.abs(t - y) <= threshold
 
 
