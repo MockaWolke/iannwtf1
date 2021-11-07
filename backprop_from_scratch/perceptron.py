@@ -45,9 +45,9 @@ class Perceptron():
             inputs = activations from earlier layer neurons
         """
         
-        self.incoming_activations = inputs
-        self.drive = np.dot(inputs, self.weights) + self.bias
-        self.output = float(self.activation(self.drive))
+        self.incoming_activations = inputs # save the inputs for the backprop step
+        self.drive = np.dot(inputs, self.weights) + self.bias # calculate the drive nicely with np.dot and also save it for later
+        self.output = float(self.activation(self.drive)) # also save the output for later
         
         return self.output
 
@@ -62,8 +62,8 @@ class Perceptron():
         
         self.delta = delta
         # gradient calc
-        gradient = self.delta * self.incoming_activations
+        gradient = self.delta * self.incoming_activations # here we make use of the incomming_activations saved in the forward step
         
         # param update
-        self.weights -=  self.alpha * gradient
-        self.bias -= self.alpha * delta
+        self.weights -=  self.alpha * gradient # adjust the weights
+        self.bias -= self.alpha * delta # and the bias
