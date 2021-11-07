@@ -2,9 +2,7 @@
 
 
 ## [Homework 1](course_prep)
-<details>
-  <summary>Course Preparation</summary>
-</details>
+Course Preparation
 
 
 ## [Homework 2](backprop_from_scratch)
