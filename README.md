@@ -1,11 +1,11 @@
 # Implementing Artificial Neural Networks with Tensorflow - Group 2
 
 
-## [Homework 1](course_prep)
+## [HW 1](course_prep)
 Course Preparation
 
 
-## [Homework 2](backprop_from_scratch)
+## [HW 2](backprop_from_scratch)
 <details>
   <summary>Backpropagation from Scratch</summary>
 
@@ -35,4 +35,4 @@ Course Preparation
 
 
 
-## [Homework 3]()
+## [HW 3]()
