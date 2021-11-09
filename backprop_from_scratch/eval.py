@@ -25,7 +25,7 @@ def squared_error(t, y):
 
 def accuracy(t, y, threshold = 0.5):                        
     """ Accuracy (Quantitative performance measure). """
-    return np.abs(t - y) <= threshold
+    return np.abs(t - y) <= threshold # if the differenec of y and the target is balow 0.5, return true, else false
 
 
 if __name__ == "__main__":

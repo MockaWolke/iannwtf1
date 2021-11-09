@@ -9,7 +9,11 @@ Course Preparation
 <details>
   <summary>Backpropagation from Scratch</summary>
 
-  This week our task was to implement a MLP from scratch. We did so and used different classes and skripts for our Dataset, Functions, Perceptron, training and a Jupyter Notebook for visualization. We also visualized every possible logical gate as well as a live training visualization of our network.
+  This week our task was to implement a MLP from scratch. We did so and used different classes and skripts for our Dataset, Functions, Perceptron, training and a Jupyter Notebook for visualization. 
+  
+  We have created a quite sofisticated fully connected MLP. You can chose as many input, output neurons, and hidden layers as you want as well as adjusting the hiddenlayer width freely.
+  You can even specify different activation functions for the input, hidden and output neurons.
+  We also visualized every possible logical gate as well as a live training visualization of our network.
   ### [dataset.py](backprop_from_scratch/dataset.py)
   Provides the inputs with the labels. Can be choosen between and, or, nand. nor, xor depending on the given parameter (standard is xor).
   ### [eval.py](backprop_from_scratch/eval.py)
