@@ -34,9 +34,4 @@ Course Preparation
 </details>
 
 
-
-
-
-
-
-## [HW 3]()
+## [HW 3](HW3_bacteria)
