@@ -49,4 +49,4 @@ Course Preparation
     ###[HW3.ipynb){HW3_bacteria/HW3.ipynb)
     This jupyter notebook is used for our visualization and training. It is inbedded in Google colab so you do not have to run it locally. First this reposetory is cloned so the respective classes and skripts can be utilized. After that we defined a function to train our model and to test our model. After that the data is loaded, preprocessed, hyperparameters are choosen, test is initialized, performance is printed and then the model is trained. After that the visualization follows.
     
-<details>
+</details>
