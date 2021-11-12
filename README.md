@@ -46,7 +46,7 @@ Course Preparation
     This class represents a Layer in our network. The constructor initializes a layer (default is with 256 units and sigmoid activation function). The build function  creates random weights and bias and the call function is used to update our parameters. 
     ### [model.py](HW3_bacteria/model.py)
     This class represents our whole model. It is initialized with 2 hidden layers and an output layer. The call function is used to call the call function of our layer class to update our parameters.
-    ###[HW3.ipynb){HW3_bacteria/HW3.ipynb)
+    ### [HW3.ipynb)(HW3_bacteria/HW3.ipynb)
     This jupyter notebook is used for our visualization and training. It is inbedded in Google colab so you do not have to run it locally. First this reposetory is cloned so the respective classes and skripts can be utilized. After that we defined a function to train our model and to test our model. After that the data is loaded, preprocessed, hyperparameters are choosen, test is initialized, performance is printed and then the model is trained. After that the visualization follows.
-    
+
 </details>
