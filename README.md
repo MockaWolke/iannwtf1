@@ -36,7 +36,7 @@ Course Preparation
 
 ## [HW 3](HW3_bacteria)
 <details>
-  <summary>Bacteria<summary>
+  <summary>Bacteria</summary>
     
     This week our task was to work with Tensorflow datasets and to create a Newtwork working with some data about different kind of bacteria which can be differantiated by their respective genome sequence. For that matter the data had to be preprocessed with one-hot encoding. After that we created a Layer and Model class to realize the different layers in our network and the network itself. For the training an visualization we used a jupyter notebook for easier use and easier visualization.
     
