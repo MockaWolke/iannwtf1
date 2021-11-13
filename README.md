@@ -2,8 +2,8 @@
 
 <details>
   
-  <summary style="font-size: 20px; cursor: pointer; padding: 5px;">
-    HW1 - Course Preparation
+  <summary>
+    <h2>HW1 - Course Preparation<h2>
   </summary>
 
   All files are located in [course_prep](course_prep).
@@ -14,8 +14,8 @@
     
 <details>
   
-  <summary style="font-size: 20px; cursor: pointer; padding: 5px;">
-    HW2 - Backpropagation from Scratch
+  <summary>
+    <h2> HW2 - Backpropagation from Scratch <h2>
   </summary>
 
   All files are located in [backprop_from_scratch](backprop_from_scratch).
@@ -48,8 +48,8 @@
 
 <details>
   
-  <summary style="font-size: 20px; cursor: pointer; padding: 5px;">
-    HW3 - Bacteria
+  <summary>
+    <h2>HW3 - Bacteria<h2>
   </summary>
 
   All files are located in [HW3_bacteria](HW3_bacteria).
@@ -72,12 +72,12 @@
 
 <details>
 
-  <summary style="font-size: 20px; cursor: pointer; padding: 5px;">
-    HW4 - ...
+  <summary>
+    <h2>HW4 - ...<h2>
   </summary>
 
   All files are located in []()
-  
+
   ...
 
 </details>
