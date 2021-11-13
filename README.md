@@ -11,7 +11,10 @@
   Recap of some python operations and calculus.
 
 </details>
-    
+<br>
+<br>
+
+
 <details>
   
   <summary>
@@ -45,6 +48,9 @@
   This notebook is used to visualize the training and output of our network. We visualize different logical gates as well as a live training of our network.
 
 </details>
+<br>
+<br>
+
 
 <details>
   
@@ -69,6 +75,8 @@
   This jupyter notebook is used for our visualization and training. It is inbedded in Google colab so you do not have to run it locally. First this reposetory is cloned so the respective classes and skripts can be utilized. After that we defined a function to train our model and to test our model. After that the data is loaded, preprocessed, hyperparameters are choosen, test is initialized, performance is printed and then the model is trained. After that the visualization follows.
 
 </details>
+<br>
+<br>
 
 <details>
 
@@ -81,7 +89,5 @@
   ...
 
 </details>
-    
-
-
-
+<br>
+<br>
