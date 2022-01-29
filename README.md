@@ -3,7 +3,7 @@
 <details>
   
   <summary>
-    <h2>HW1 - Course Preparation<h2>
+    <h2>HW1 - course_prep<h2>
   </summary>
 
   All files are located in [course_prep](course_prep).
@@ -11,14 +11,11 @@
   Recap of some python operations and calculus.
 
 </details>
-<br>
-<br>
-
 
 <details>
   
   <summary>
-    <h2> HW2 - Backpropagation from Scratch <h2>
+    <h2> HW2 - backprop_from_scratch <h2>
   </summary>
 
   All files are located in [backprop_from_scratch](backprop_from_scratch).
@@ -48,14 +45,11 @@
   This notebook is used to visualize the training and output of our network. We visualize different logical gates as well as a live training of our network.
 
 </details>
-<br>
-<br>
-
 
 <details>
   
   <summary>
-    <h2>HW3 - Bacteria<h2>
+    <h2>HW3 - mlp_bacteria_classification<h2>
   </summary>
 
   All files are located in [HW3_bacteria](HW3_bacteria).
@@ -75,19 +69,67 @@
   This jupyter notebook is used for our visualization and training. It is inbedded in Google colab so you do not have to run it locally. First this reposetory is cloned so the respective classes and skripts can be utilized. After that we defined a function to train our model and to test our model. After that the data is loaded, preprocessed, hyperparameters are choosen, test is initialized, performance is printed and then the model is trained. After that the visualization follows.
 
 </details>
-<br>
-<br>
 
 <details>
 
   <summary>
-    <h2>HW4 - ...<h2>
+    <h2>HW4 - mlp_wine_quality_classification<h2>
   </summary>
 
-  All files are located in []()
+</details>
 
-  ...
+<details>
+
+  <summary>
+    <h2>HW5 - cnn_mnist_classification<h2>
+  </summary>
 
 </details>
-<br>
-<br>
+
+<details>
+
+  <summary>
+    <h2>HW6 - resNet_denseNet_cifar10<h2>
+  </summary>
+
+</details>
+
+<details>
+
+  <summary>
+    <h2>HW7 - lstm_from_scratch<h2>
+  </summary>
+
+</details>
+
+<details>
+
+  <summary>
+    <h2>HW8 - autoencoder_mnist<h2>
+  </summary>
+
+</details>
+
+<details>
+
+  <summary>
+    <h2>HW9 - gan_quickDraw<h2>
+  </summary>
+
+</details>
+
+<details>
+
+  <summary>
+    <h2>HW10 - skipGram_bible<h2>
+  </summary>
+
+</details>
+
+<details>
+
+  <summary>
+    <h2>HW11 - transformer_nietzsche<h2>
+  </summary>
+
+</details>
